@@ -10,14 +10,14 @@ public class CapacitorInstallerSourceNamePlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "CapacitorInstallerSourceNamePlugin"
     public let jsName = "CapacitorInstallerSourceName"
     public let pluginMethods: [CAPPluginMethod] = [
-        CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "getAppInstaller", returnType: CAPPluginReturnPromise)
     ]
     private let implementation = CapacitorInstallerSourceName()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func getAppInstaller(_ call: CAPPluginCall) {
+        let installerInfo = implementation.getAppInstaller()
         call.resolve([
-            "value": implementation.echo(value)
+            "installer": installerInfo
         ])
     }
 }

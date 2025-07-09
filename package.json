@@ -1,7 +1,7 @@
 {
   "name": "capacitor-installer-source-name",
   "version": "0.0.1",
-  "description": "Installer name for capacitor ionic app",
+  "description": "A Capacitor plugin that detects the installation source of your app across Android, iOS, and Web platforms",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -27,7 +27,14 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "installer",
+    "app-store",
+    "analytics",
+    "distribution",
+    "android",
+    "ios",
+    "web"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
@@ -46,10 +53,10 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@capacitor/android": "^6.0.0",
-    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "7.4.1",
+    "@capacitor/core": "7.4.1",
     "@capacitor/docgen": "0.3.0",
-    "@capacitor/ios": "^6.0.0",
+    "@capacitor/ios": "7.4.1",
     "@ionic/eslint-config": "^0.4.0",
     "@ionic/prettier-config": "^4.0.0",
     "@ionic/swiftlint-config": "^2.0.0",
@@ -62,7 +69,7 @@
     "typescript": "~4.1.5"
   },
   "peerDependencies": {
-    "@capacitor/core": "^6.0.0"
+    "@capacitor/core": "7.4.1"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
