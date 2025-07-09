@@ -62,7 +62,7 @@ const getInstaller = async () => {
 
 <docgen-index>
 
-- [`getAppInstaller()`](#getappinstaller)
+* [`getAppInstaller()`](#getappinstaller)
 
 </docgen-index>
 
@@ -79,7 +79,9 @@ Gets information about how the app was installed.
 
 **Returns:** <code>Promise&lt;{ installer: string | null; }&gt;</code>
 
----
+**Since:** 1.0.0
+
+--------------------
 
 </docgen-api>
 
