@@ -13,24 +13,20 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`getAppInstaller()`](#getappinstaller)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### getAppInstaller()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+getAppInstaller() => Promise<{ installer: string | null; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ installer: string | null; }&gt;</code>
 
 --------------------
 
