@@ -1,6 +1,6 @@
 {
   "name": "capacitor-installer-source-name",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Capacitor plugin that detects the installation source of your app across Android, iOS, and Web platforms",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
