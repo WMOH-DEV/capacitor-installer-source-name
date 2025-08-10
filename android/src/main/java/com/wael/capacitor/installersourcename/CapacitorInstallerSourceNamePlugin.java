@@ -69,7 +69,7 @@ public class CapacitorInstallerSourceNamePlugin extends Plugin {
     // Helper method to format installer name
     private String getFormattedInstallerName(String installerPackageName) {
         if (installerPackageName == null) {
-            return "Installed from an unknown source";
+            return "unknown";
         }
 
         // Using traditional switch statement for better compatibility
